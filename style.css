@@ -32,7 +32,7 @@ body{
 
 .navbar ul a li{
     display: inline;
-    color: #d13617;
+    color: white;
     font-size: 30px;
     font-weight: bold;
     padding: 10px 15px;
@@ -41,7 +41,7 @@ body{
 }
 
 .navbar ul a li:hover{
-    background-color: red;
+    background-color: blue;
     color:yellow;
     border-radius: 20px;
 }

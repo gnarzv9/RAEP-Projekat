@@ -37,11 +37,13 @@
     <br><br><br><br><br><br><br><br>
     <h1>Dobrodošli u našu prodavnicu lopti!</h1>
 
-        <form name="poruka1" id="poruka1" action="" method="POST">
+        <form name="poruka1" id="poruka1" action="registracija.php" method="POST">
 
                 <h3>Napravite nalog kako biste mogli da kupite loptu.</h3>
-                <h4>Ime i Prezime:</h4>
+                <h4>Ime:</h4>
                 <input type="text" name="ime" id="ime1">
+                <h4>Prezime:</h4>
+                <input type="text" name="prezime">
                 <h4>Email:</h4>
                 <input type="email" name="email">
                 <br><br>
@@ -49,37 +51,6 @@
                 <input type="button" name="obrisi" align="center" onclick="obrisiUnos()" value="Obriši">
                 <br><br>
             </form>
-
-            <?php
-                $poruka = "";
-                if($poruka) {
-                    echo $poruka; 
-                }
-            ?>
-
-
-</body>
-<?php
-
-if(isset($_POST['posalji'])){   
-    if(ctype_alpha($_POST['ime'])){
-        $ime = $_POST['ime'];
-    }
-    else{
-        $poruka = "Ime i prezime se mogu sastojati samo iz slova!";
-    }
-    //if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-   //     $email = $_POST['email'];
-   // }
-    //else{
-    //    $poruka= "Niste uneli validnu email adresu!";
-    //}
-}
-    
-
-?>
-
-
 </div>
 </body>
 </html>
