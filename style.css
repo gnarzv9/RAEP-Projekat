@@ -44,6 +44,7 @@ body{
     background-color: blue;
     color:yellow;
     border-radius: 20px;
+    padding: 20px;
 }
 
 h1{
@@ -63,3 +64,16 @@ form{
     border-radius: 15px;
 }
 
+#Button,#Button2{
+    background-color: lightblue;
+    border: 4px;
+    border-radius: 20px;
+    font-size: 40px;
+    margin-top:400px;
+    margin-left:400px;
+    transition: 0.3s ease;
+}
+
+#Button:hover,#Button2:hover{
+    background-color: deepskyblue;
+}
