@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Početna</title>
+    <title>Uspešno obrisan nalog</title>
 
 </head>
 <body>
@@ -22,22 +22,7 @@
     </div>
 
     <br><br><br><br><br><br><br><br>
-    <h1>Dobrodošli u našu prodavnicu lopti!</h1>
-
-        <form name="poruka1" id="forma1" action="registracija.php" method="POST">
-
-                <h3>Napravite nalog kako biste mogli da kupite loptu.</h3>
-                <h4>Ime:</h4>
-                <input type="text" name="ime" id="ime1">
-                <h4>Prezime:</h4>
-                <input type="text" name="prezime">
-                <h4>Email:</h4>
-                <input type="email" name="email">
-                <br><br>
-                <input type="submit" name="posalji" align="center" value="Pošalji">
-                <input type="reset" name="obrisi" align="center" value="Obriši">
-                <br><br>
-            </form>
+    <h1>Nalog uspešno obrisan!</h1>
 </div>
 </body>
 </html>

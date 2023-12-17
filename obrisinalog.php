@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Dodaj lopte</title>
+    <title>Obriši nalog</title>
+
 </head>
 <body>
 <div class="main">
@@ -21,23 +22,15 @@
     </div>
 
     <br><br><br><br><br><br><br><br>
-    <h1>Unesite podatke kako biste dodali loptu.</h1>
+    <h1>Brisanje naloga</h1>
 
-        <form name="poruka1" id="forma1" action="dodaj.php" method="POST">
-     
-                <h4>Sifra:</h4>
-                <input type="text" name="sifra">
-                <h4>Brend:</h4>
-                <input type="text" name="brend">
-                <h4>Naziv:</h4>
-                <input type="text" name="naziv">
-                <h4>Cena:</h4>
-                <input type="text" name="cena">
-                <h4>Sport:</h4>
-                <input type="text" name="sport">
+        <form name="poruka1" id="forma1" action="obrisi.php" method="POST">
+
+                <h3>Unesite vaš email kako biste obrisali nalog.</h3>
+                <h4>Email:</h4>
+                <input type="email" name="email">
                 <br><br>
-                <input type="submit" name="posalji" align="center" value="Pošalji">
-                <input type="reset" name="obrisi" align="center" value="Obriši">
+                <button type="submit" name="obrisinalog" value="Obriši nalog">Obriši nalog</button>
                 <br><br>
             </form>
 </div>

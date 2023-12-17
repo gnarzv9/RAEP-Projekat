@@ -1,32 +1,90 @@
 <?php
+    if(isset($_POST['posalji'])){
+    $ime=$_POST['ime'];
+    $prezime=$_POST['prezime'];
+    $email=$_POST['email']; 
 
-    $mysqli=mysqli_connect("localhost", "root", "", "lopte");
-    if($mysqli->connect_errno){
-        echo "Neuspesno povezivanje na bazu.";
-        exit();
+    class registrovan{
+        protected $ime;
+        protected $prezime;
+        protected $email;
+    
+
+    function __construct($ime,$prezime,$email){
+        $this->ime=$ime;
+        $this->prezime=$prezime;
+        $this->email=$email;
     }
 
-    $ime =  $_REQUEST['ime'];
-    $prezime = $_REQUEST['prezime'];
-    $email = $_REQUEST['email'];
+    function Ime(){
+        if(ctype_alnum($this->ime)){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
-    $sql = "INSERT INTO korisnici VALUES ('$ime', '$prezime','$email')";
+    function Prezime(){
+        if(ctype_alnum($this->prezime)){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
-    if(mysqli_query($mysqli, $sql)){
-        echo '<script>alert("Nalog ubacen u bazu!")</script>';  
-         
-    } else{
-        echo "Neuspesna kreacija naloga!". mysqli_error($mysqli);
+    function Email(){
+        if(filter_var($this->email, FILTER_VALIDATE_EMAIL)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    }
+
+    class register extends registrovan{
+
+        public function Register(){
+    
+          if($this->Ime()==false){
+            header("location:loseime.php");
+            exit();
+           }
+    
+          if($this->Prezime()==false){
+            header("location:loseprezime.php");
+            exit();
+          }
+          if($this->Email()==false){
+            header("location:losemail.php");
+            exit();
+          }
+
+          $mysqli=mysqli_connect("localhost", "root", "", "lopte");
+          if($mysqli->connect_errno){
+              echo "Neuspesno povezivanje na bazu.";
+              exit();
+          }
+
+          $sql="INSERT INTO korisnici(ime,prezime,email) VALUES (?,?,?)";
+          if(!$stmt=$mysqli->prepare($sql)){
+            echo 'Neispravan unos.';
+        }
+        $stmt->bind_param('sss',$this->ime,$this->prezime,$this->email);
+
+        if($stmt->execute()){
+            echo"Uspešna registracija";
+        }
+        else{
+            echo"Neuspešna registracija";
+        }
+        }
     }
     
-    mysqli_close($mysqli);
+
+$korisnik = new register($ime,$prezime,$email);
+$korisnik->Register();
+}
 ?>
 
-<button id="Button" >Pretrazi Lopte</button>
-<link rel="stylesheet" href="style.css">
-<script>
-    document.getElementById("Button").onclick = function () {
-        location.href = "http://127.0.0.1/RAEP-Projekat/RAEP-Projekat/pretrazilopte.php";
-    };
-</script>
+
 

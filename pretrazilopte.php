@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Pretrazi lopte</title>
+    <title>Pretraži lopte</title>
 </head>
 <body>
 <div class="main">
@@ -14,8 +14,8 @@
         </div>   
         <ul>
             <a href="index.php"> <li> Početna </li> </a>
-            <a href="pretrazilopte.php"> <li> Pretrazi Lopte </li> </a>
-            <a href=""> <li> Odbojka </li> </a>
+            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>
+            <a href="obrisinalog.php"> <li> Obriši nalog </li> </a>
             <a href="dodajlopte.php"> <li> Dodaj lopte-Admin </li> </a>
         </ul>
     </div>
@@ -32,7 +32,7 @@
                 <input type="text" name="brend">
                 <br><br>
                 <input type="submit" name="posalji" align="center" value="Pretraži">
-                <input type="button" name="obrisi" align="center" value="Obriši">
+                <input type="reset" name="obrisi" align="center" value="Obriši">
                 <br><br>
          </form>
 

@@ -15,8 +15,7 @@
     $sql = "INSERT INTO loptetabela VALUES ('$sifra', '$brend','$naziv','$cena','$sport')";
 
     if(mysqli_query($mysqli, $sql)){
-        echo '<script>alert("Lopta ubacena u bazu!")</script>';  
-         
+        header('Location: loptauspesna.php');
     } else{
         echo "Neuspesan dodatak lopte!". mysqli_error($mysqli);
     }
@@ -25,17 +24,4 @@
 ?>
 
 <link rel="stylesheet" href="style.css">
-<button id="Button" >Pretrazi Lopte</button>
-<script>
-    document.getElementById("Button").onclick = function () {
-        location.href = "http://127.0.0.1/RAEP-Projekat/RAEP-Projekat/pretrazilopte.php";
-    };
-</script>
-
-<button id="Button2" >Dodaj jos lopti</button>
-<script>
-    document.getElementById("Button2").onclick = function () {
-        location.href = "http://127.0.0.1/RAEP-Projekat/RAEP-Projekat/dodajlopte.php";
-    };
-</script>
 
