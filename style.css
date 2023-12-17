@@ -38,6 +38,8 @@ body{
     padding: 10px 15px;
     cursor:pointer;
     transition: 0.3s ease;
+    background-color: gray;
+    margin:6px;
 }
 
 .navbar ul a li:hover{
@@ -47,19 +49,19 @@ body{
     padding: 20px;
 }
 
-h1{
+h1,h3,h2{
     text-align: center;
     color: lightseagreen;
 }
 
-form{
+#forma1{
     text-align: center;
     width: 400px;
     height:auto;
     border:5px solid black;
     background-color: #4166F5;
     position: absolute;
-    top:250px;
+    /*top:250px;*/
     left:750px;
     border-radius: 15px;
 }
@@ -76,4 +78,13 @@ form{
 
 #Button:hover,#Button2:hover{
     background-color: deepskyblue;
+}
+
+input[type=text]{
+    width: 130px;
+    text-align: center;
+}
+
+.ispislopti{
+    color: aquamarine;
 }

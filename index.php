@@ -6,19 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Pocetna</title>
 
-    <script>
-    
- /*   function hvala(){
-    var ime1=document.poruka1.ime.value;
-    alert("Hvala na poslatom komentaru, "+ime1+"!");
-    return;
-   }   
-
-    function obrisiUnos() {
-        document.getElementById("poruka1").reset();
-    }*/
-
-</script>
 </head>
 <body>
 <div class="main">
@@ -37,7 +24,7 @@
     <br><br><br><br><br><br><br><br>
     <h1>Dobrodošli u našu prodavnicu lopti!</h1>
 
-        <form name="poruka1" id="poruka1" action="registracija.php" method="POST">
+        <form name="poruka1" id="forma1" action="registracija.php" method="POST">
 
                 <h3>Napravite nalog kako biste mogli da kupite loptu.</h3>
                 <h4>Ime:</h4>

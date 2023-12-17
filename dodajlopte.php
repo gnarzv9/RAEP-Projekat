@@ -23,7 +23,7 @@
     <br><br><br><br><br><br><br><br>
     <h1>Unesite podatke kako biste dodali loptu.</h1>
 
-        <form name="poruka1" id="poruka1" action="dodaj.php" method="POST">
+        <form name="poruka1" id="forma1" action="dodaj.php" method="POST">
      
                 <h4>Sifra:</h4>
                 <input type="text" name="sifra">
