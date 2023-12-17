@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Uspešno ubacena lopta</title>
+    <title>Promena cene</title>
 
 </head>
 <body>
@@ -24,7 +24,21 @@
     </div>
 
     <br><br><br><br><br><br><br><br>
-    <h1>Lopta uspešno ubačena u bazu!</h1>
+    <h1>Promenite cenu lopte!</h1>
+
+    <form id="forma1" action="promena.php" method="POST">
+
+                <h3>Unesite sifru lopte i njenu novu cenu.</h3>
+                <h4>Sifra:</h4>
+                <input type="sifra" name="sifra">
+                <br><br>
+                <h4>Nova cena:</h4>
+                <input type="cena" name="cena">
+                <br><br>
+                <button type="submit" name="promenicenu" value="Promeni cenu">Promeni cenu</button>
+                <br><br>
+    </form>
+
 </div>
 </body>
 </html>

@@ -14,9 +14,11 @@
         </div>   
         <ul>
             <a href="index.php"> <li> Početna </li> </a>
-            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>
+            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>       
             <a href="obrisinalog.php"> <li> Obriši nalog </li> </a>
-            <a href="dodajlopte.php"> <li> Dodaj lopte-Admin </li> </a>
+            ADMIN
+            <a href="promenicenu.php"> <li> Promeni cenu </li> </a>
+            <a href="dodajlopte.php"> <li> Dodaj lopte </li> </a>
         </ul>
     </div>
 
@@ -26,7 +28,7 @@
     <h2>Fudbal:Nike, Adidas, Mikasa</h2>
     <h2>Kosarka:Molten, Nike, Spalding</h2>
     <h2>Odbojka:Mikasa, Allsix</h2>
-        <form name="poruka1" id="forma1" method="POST">
+        <form id="forma1" method="POST">
      
                 <h4>Naziv:</h4>
                 <input type="text" name="brend">

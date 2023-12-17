@@ -15,9 +15,11 @@
         </div>   
         <ul>
             <a href="index.php"> <li> Početna </li> </a>
-            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>
+            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>       
             <a href="obrisinalog.php"> <li> Obriši nalog </li> </a>
-            <a href="dodajlopte.php"> <li> Dodaj lopte-Admin </li> </a>
+            ADMIN
+            <a href="promenicenu.php"> <li> Promeni cenu </li> </a>
+            <a href="dodajlopte.php"> <li> Dodaj lopte </li> </a>
         </ul>
     </div>
 

@@ -15,8 +15,10 @@
         </div>   
         <ul>
             <a href="index.php"> <li> Početna </li> </a>
-            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>
+            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>       
             <a href="obrisinalog.php"> <li> Obriši nalog </li> </a>
+            ADMIN
+            <a href="promenicenu.php"> <li> Promeni cenu </li> </a>
             <a href="dodajlopte.php"> <li> Dodaj lopte-Admin </li> </a>
         </ul>
     </div>
@@ -24,7 +26,7 @@
     <br><br><br><br><br><br><br><br>
     <h1>Dobrodošli u našu prodavnicu lopti!</h1>
 
-        <form name="poruka1" id="forma1" action="registracija.php" method="POST">
+        <form id="forma1" action="registracija.php" method="POST">
 
                 <h3>Napravite nalog kako biste mogli da kupite loptu.</h3>
                 <h4>Ime:</h4>

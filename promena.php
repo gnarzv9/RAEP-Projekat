@@ -10,26 +10,25 @@ try {
 }
 
 
-if(isset($_POST['obrisinalog']))
+if(isset($_POST['promenicenu']))
 {
-    $email = $_POST['email'];
-
+    $sifra = $_POST['sifra'];
+    $cena = $_POST['cena'];
     try {
 
-        $sql = "DELETE FROM korisnici WHERE email=:email";
-        $stmt = $dbh->prepare($sql);
-        $exec = $stmt->execute(array(":email"=>$email));
+        $sql = "UPDATE loptetabela SET cena='$cena' WHERE sifra=$sifra";
+        $stmt = $dbh->prepare($sql);      
         $exec = $dbh->beginTransaction(); 
         $exec = $stmt->execute(); 
         $dbh->commit();
 
         if($exec)
         {
-            header('Location: brisanjeuspesno.php');   
+            header('Location: promenaceneuspesna.php');   
         }
         else
         {
-            echo 'Brisanje naloga nije uspelo.';
+            echo 'Promena cene nije uspela.';
         }
 
         
@@ -38,5 +37,4 @@ if(isset($_POST['obrisinalog']))
         echo $e->getMessage();
     }
 }
-
 ?>

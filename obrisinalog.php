@@ -15,16 +15,18 @@
         </div>   
         <ul>
             <a href="index.php"> <li> Početna </li> </a>
-            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>
+            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>       
             <a href="obrisinalog.php"> <li> Obriši nalog </li> </a>
-            <a href="dodajlopte.php"> <li> Dodaj lopte-Admin </li> </a>
+            ADMIN
+            <a href="promenicenu.php"> <li> Promeni cenu </li> </a>
+            <a href="dodajlopte.php"> <li> Dodaj lopte </li> </a>
         </ul>
     </div>
 
     <br><br><br><br><br><br><br><br>
     <h1>Brisanje naloga</h1>
 
-        <form name="poruka1" id="forma1" action="obrisi.php" method="POST">
+        <form id="forma1" action="obrisi.php" method="POST">
 
                 <h3>Unesite vaš email kako biste obrisali nalog.</h3>
                 <h4>Email:</h4>

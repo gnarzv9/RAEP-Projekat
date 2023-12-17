@@ -65,14 +65,14 @@
               exit();
           }
 
-          $sql="INSERT INTO korisnici(ime,prezime,email) VALUES (?,?,?)";
-          if(!$stmt=$mysqli->prepare($sql)){
-            echo 'Neispravan unos.';
+        $sql="INSERT INTO korisnici(ime,prezime,email) VALUES (?,?,?)";
+        if(!$stmt=$mysqli->prepare($sql)){
+        echo 'Neispravan unos.';
         }
         $stmt->bind_param('sss',$this->ime,$this->prezime,$this->email);
 
         if($stmt->execute()){
-            echo"Uspešna registracija";
+            header('Location: uspesnaregistracija.php');
         }
         else{
             echo"Neuspešna registracija";
@@ -83,6 +83,7 @@
 
 $korisnik = new register($ime,$prezime,$email);
 $korisnik->Register();
+
 }
 ?>
 

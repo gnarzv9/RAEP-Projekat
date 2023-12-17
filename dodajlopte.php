@@ -14,16 +14,18 @@
         </div>   
         <ul>
             <a href="index.php"> <li> Početna </li> </a>
-            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>
+            <a href="pretrazilopte.php"> <li> Pretraži Lopte </li> </a>       
             <a href="obrisinalog.php"> <li> Obriši nalog </li> </a>
-            <a href="dodajlopte.php"> <li> Dodaj lopte-Admin </li> </a>
+            ADMIN
+            <a href="promenicenu.php"> <li> Promeni cenu </li> </a>
+            <a href="dodajlopte.php"> <li> Dodaj lopte </li> </a>
         </ul>
     </div>
 
     <br><br><br><br><br><br><br><br>
     <h1>Unesite podatke kako biste dodali loptu.</h1>
 
-        <form name="poruka1" id="forma1" action="dodaj.php" method="POST">
+        <form id="forma1" action="dodaj.php" method="POST">
      
                 <h4>Sifra:</h4>
                 <input type="text" name="sifra">

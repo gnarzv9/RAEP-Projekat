@@ -23,5 +23,4 @@
     mysqli_close($mysqli);
 ?>
 
-<link rel="stylesheet" href="style.css">
 

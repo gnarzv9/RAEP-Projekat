@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Uspešno ubacena lopta</title>
+    <title>Uspešna registracija</title>
 
 </head>
 <body>
@@ -24,7 +24,7 @@
     </div>
 
     <br><br><br><br><br><br><br><br>
-    <h1>Lopta uspešno ubačena u bazu!</h1>
+    <h1>Uspešna registracija!</h1>
 </div>
 </body>
 </html>
